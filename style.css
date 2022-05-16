@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Montserrat&family=Roboto+Slab&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.head{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+ nav{
+    background-color: rgba(34, 26, 26, 0.911);
+    color: azure;
+    padding: 0 12px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem ;
+    display: flex;
+    align-items: center;
+
+}
+/* hiding the img gifs*/
+.imgbox{
+    
+    visibility: hidden;
+    transition: 1s ease-in-out;
+}
+
+/* Adding css property to our entire game screen */
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* adding grid structure to game container.*/
+.gameContainer{
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  grid-template-columns: repeat(3,10vw);
+  grid-template-rows: repeat(3,10vw);
+
+}
+
+/* Giving border to each box*/
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.box:hover{
+    background-color: 	#dbd9d9;
+}
+
+.gameinfo{
+    margin: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* creating different stylesheet class to remove boder at respective corner */
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+/* i had bootstrap to give style to reset button but some style are also given here.  */
+.reset{
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.info{
+    font-size: 1.8rem;
+}
+
+/* adding responsive to website by using media selector.*/
+
+@media only screen and (max-width: 800px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .gameContainer{
+        display: grid;
+        grid-template-columns: repeat(3,15vw);
+        grid-template-rows: repeat(3,15vw);
+    }
+  }
+
+
+/* footer styling */ 
+
+
+#footer{
+    background-color: rgb(145, 140, 140);
+    text-align:center;
+    padding: 3% 15% 3%;
+    margin-top: 8%;
+  }
+  
+  .foot-icon{
+    padding: 2% 1%;
+    width: 20%;
+    color: black;
+    zoom:1.5;
+  }

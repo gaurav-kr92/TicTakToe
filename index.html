@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="icon" href="image/favicon.ico"  >
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico"  >
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/c6c621b2e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Nav Bar using bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Round-1(task),Tic-Tac-Toe Game</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+          <ul class="navbar-nav ms-auto">
+            <li class="navbar-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+
+        </ul>
+    </nav>    
+    
+    
+    <!--Created a container which has two part one for game and other is info part -->
+    <div class="container">
+        <div class="gameContainer">
+            <div class="box bt-0 bl-0 "><span class="symbol"></span></div>
+            <div class="box bt-0"><span class="symbol"></span></div>
+            <div class="box bt-0 br-0"><span class="symbol"></span></div>
+            <div class="box bl-0"><span class="symbol"></span></div>
+            <div class="box"><span class="symbol"></span></div>
+            <div class="box br-0"><span class="symbol"></span></div>
+            <div class="box bl-0 bb-0"><span class="symbol"></span></div>
+            <div class="box bb-0"><span class="symbol"></span></div>
+            <div class="box bb-0 br-0"><span class="symbol"></span></div>
+        </div>
+        <div class="gameinfo">
+            <h1 class="head">Welcome to Tic-Tac-Toe Game</h1>
+            <div>
+                <span class="info">Turn for X</span>
+                <button class="reset btn btn-lg btn-outline-dark">Reset</button>
+            </div>
+            <div class="imgbox">
+                <img src="gify1.gif" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer to coonect with Me..-->
+
+  <footer id="footer">
+
+    <a class="foot-icon" href="https://twitter.com/gaurav11kr"><i class="fa-brands fa-twitter"></i></a>
+    <a class="foot-icon" href="https://www.facebook.com/sauravkumar.gaurav.54"><i class="fa-brands fa-facebook-f"></i></a>
+    <a class="foot-icon" href="https://www.instagram.com/gaurav__k4/"> <i class="fa-brands fa-instagram"></i></a>
+    <p>© Copyright gauravTicTacToe</p>
+
+  </footer>
+    <script src="index.js"></script>
+</body>
+</html>
